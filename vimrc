@@ -21,6 +21,36 @@ set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Events                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/dotfiles/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" " Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+"Plugin 'user/L9', {'name': 'newL9'}
+
+" Plugin for tab completion
+Plugin 'git@github.com:ervandew/supertab.git'
+" All of your Plugins must be added before the following line
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
+
+call vundle#end()            " required
+
+
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 
 " In Makefiles DO NOT use spaces instead of tabs
@@ -30,6 +60,11 @@ autocmd FileType ruby setlocal sw=2 ts=2 sts=2
 " In Python files, use 4 spaces instead of 4 for tabs
 autocmd FileType python setlocal sw=4 ts=4 sts=4
 
+"autocmd FileType latex 
+"let s:extfname == expand("%:e")
+"if s:extfname ==? "tex"
+"  let g:LatexBox_split_type="new"
+"endif
 
 " Enable omnicompletion (to use, hold Ctrl+X then Ctrl+O while in Insert mode.
 set ofu=syntaxcomplete#Complete
@@ -97,3 +132,11 @@ set nowrap                " don't wrap text
 
 " Prettify JSON files making them easier to read
 command PrettyJSON %!python -m json.tool
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 07. Custom Mappings"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:imap jj <Esc>
+
+
+
