@@ -1,5 +1,5 @@
 # Explicitly configured $PATH variable
-PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
+PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin:/home/ue/opengrads
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -76,3 +76,10 @@ qfind () {
 if [ -f /usr/bin/vim ]; then
   export EDITOR=/usr/bin/vim
 fi
+
+
+## My Shell Aliases:
+# Tmux Aliases
+alias tmux='TERM=screen-256color tmux -2'
+alias tmuxinator='TERM=screen-256color tmuxinator'
+alias mux='TERM=screen-256color mux'
