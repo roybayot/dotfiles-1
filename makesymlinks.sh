@@ -62,4 +62,7 @@ else
 fi
 }
 
+sudo apt-get install tmux
+ln -s $dir/tmux.conf ~/.tmux.conf
+
 install_zsh
