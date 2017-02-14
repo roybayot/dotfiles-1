@@ -1,4 +1,4 @@
-##############################################################################
+#############################################################################
 #   Filename: .bashrc                                                        #
 # Maintainer: Michael J. Smalley <michaeljsmalley@gmail.com>                 #
 #        URL: http://github.com/michaeljsmalley/dotfiles                     #

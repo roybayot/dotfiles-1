@@ -1,5 +1,5 @@
 # Explicitly configured $PATH variable
-PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin:/home/ue/opengrads
+PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
 PATH="$PATH:$HOME/anaconda2/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Path to your oh-my-zsh configuration.
@@ -83,10 +83,3 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-
-## My Shell Aliases:
-# Tmux Aliases
-alias tmux='TERM=screen-256color tmux -2'
-alias tmuxinator='TERM=screen-256color tmuxinator'
-alias mux='TERM=screen-256color mux'

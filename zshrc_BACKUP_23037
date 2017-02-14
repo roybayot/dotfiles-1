@@ -1,6 +1,10 @@
 # Explicitly configured $PATH variable
-PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin:/home/ue/opengrads
+<<<<<<< HEAD
+PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
 PATH="$PATH:$HOME/anaconda2/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+=======
+PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin:/home/ue/opengrads
+>>>>>>> 002e10e7bb9d8c598f3aa9cb76da85ec12366bd8
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -77,12 +81,14 @@ qfind () {
 if [ -f /usr/bin/vim ]; then
   export EDITOR=/usr/bin/vim
 fi
+<<<<<<< HEAD
 export WORKON_HOME=~/Envs
 #source /etc/bash_completion.d/virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+=======
 
 
 ## My Shell Aliases:
@@ -90,3 +96,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias tmux='TERM=screen-256color tmux -2'
 alias tmuxinator='TERM=screen-256color tmuxinator'
 alias mux='TERM=screen-256color mux'
+>>>>>>> 002e10e7bb9d8c598f3aa9cb76da85ec12366bd8
