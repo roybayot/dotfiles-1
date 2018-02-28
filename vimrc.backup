@@ -23,7 +23,7 @@ set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/dotfiles/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -43,12 +43,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
-" My Additions
-
-" Plugin for converting jade, sass, to html, css
-Plugin 'christoomey/vim-tmux-navigator'
-" Plugin for converting jade, sass, to html, css
-Plugin 'digitaltoad/vim-pug'
 " Plugin for tab completion
 Plugin 'git@github.com:ervandew/supertab.git'
 " All of your Plugins must be added before the following line
@@ -101,13 +95,13 @@ augroup markdown
 augroup END
 
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
-"if exists('+colorcolumn')
-"  set colorcolumn=81
-"  highlight ColorColumn ctermbg=red
-"else
-"  highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-"  match OverLength /\%81v.\+/
-"endif
+if exists('+colorcolumn')
+  set colorcolumn=81
+  highlight ColorColumn ctermbg=red
+else
+  highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+  match OverLength /\%81v.\+/
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
@@ -135,9 +129,9 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smartindent           " automatically insert one extra level of indentation
 set smarttab              " use tabs at the start of a line, spaces elsewhere
-set nowrap                " don't wrap text
+"set nowrap                " don't wrap text
 set textwidth=79
-"set wrap linebreak nolist " wraptext
+set wrap linebreak nolist " wraptext
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -147,8 +141,6 @@ set textwidth=79
 " Prettify JSON files making them easier to read
 command PrettyJSON %!python -m json.tool
 
-set autoread " to automatically refresh a page when changes are made by another
-au CursorHold * checktime  " program. eg. index.jade to index.html
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 07. Custom Mappings"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

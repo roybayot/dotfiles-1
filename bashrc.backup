@@ -1,4 +1,4 @@
-#############################################################################
+##############################################################################
 #   Filename: .bashrc                                                        #
 # Maintainer: Michael J. Smalley <michaeljsmalley@gmail.com>                 #
 #        URL: http://github.com/michaeljsmalley/dotfiles                     #
@@ -36,8 +36,5 @@ export CLICOLOR=1
 # Set "ls" colors
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-<<<<<<< HEAD
-=======
 # added by Anaconda2 2.5.0 installer
 export PATH="/home/darklord/anaconda2/bin:$PATH"
->>>>>>> 9c8a41490866c71c9e54bba708ff53c9fcec2506
