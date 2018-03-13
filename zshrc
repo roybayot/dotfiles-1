@@ -79,7 +79,7 @@ if [ -f /usr/bin/vim ]; then
 fi
 export WORKON_HOME=~/Envs
 #source /etc/bash_completion.d/virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
